@@ -5,10 +5,10 @@
     <title>Praanshu's Resume</title>
     <link rel="stylesheet" href="../dist/style.css">
 </head>
-<body class="bg-gradient-to-tr from-blue-500 via-purple-500 to-yellow-500 flex flex-col items-center">
+<body class="bg-gradient-to-tl from-[#eef2f3] to-[#8e9eab] flex flex-col items-center">
     
     <!-- Header Section : Name, Brief, Contact Info -->
-    <header class="flex flex-col w-full lg:max-w-5xl justify-center mb-10 px-7">
+    <header class="flex flex-col w-full lg:max-w-5xl justify-center my-10 px-7">
         
         <!-- First Name | Work Github and Kaggle Link -->
         <div class="flex justify-between items-center mb-5">
@@ -16,7 +16,7 @@
                 &lt;PRAANSHU
             </p>
 
-            <address class="flex flex-col">
+            <address class="md:flex flex-col hidden">
                 <p class="text-2xl">
                     &lt;Check my Work/&gt;
                 </p>
@@ -37,7 +37,7 @@
                 GROVER/&gt;
             </p>
 
-            <address class="flex flex-col">
+            <address class="md:flex flex-col hidden">
                 <p class="text-2xl">
                     &lt;Connect with Me/&gt;
                 </p>
@@ -76,7 +76,7 @@
     <!-- Professional Summary Ends -->
 
     <!-- Main section: Professional Experience, Projects, Skills, Education -->
-    <main class="flex flex-col w-256 mb-10 px-7">
+    <main class="flex flex-col w-full mb-10 px-7 lg:max-w-5xl">
 
         <!-- Professional Experience -->
         <div class="mb-10">
@@ -120,9 +120,9 @@
                 <ul class="list">
                     <li>
                         <a rel="noopener noreferrer" href="https://github.com/Praanshu98/student_mental_health">
-                            <span class="flex font-bold text-2xl">
+                            <span class="flex font-bold text-2xl m-0 p-2">
                             Student Mental Health Analysis
-                            <img class="w-10 h-10" src="../assets/images/github.svg" alt="github">
+                            <img class="w-10 h-10 m-0 p-2" src="../assets/images/github.svg" alt="github">
                             </span>
                         </a>
                         <ul class="list-disc list-inside">
@@ -139,11 +139,13 @@
                     <span class="block mb-4"></span>
                     
                     <li>
-                        <a rel="noopener noreferrer" href="https://github.com/Praanshu98/100x-MicroBlogging">
-                            <span class="flex font-bold text-2xl">
-                            100x Micro-Blogging Website
-                            <img class="w-10 h-10" src="../assets/images/github.svg" alt="github">
-                            </span>
+                        <a rel="noopener noreferrer" href="https://github.com/Praanshu98/100x-MicroBlogging" class="flex gap-2">
+                            <!-- <span class="flex font-bold text-2xl m-0 p-2"> -->
+                            <p class="text-2xl font-bold">
+                                100x Micro-Blogging Website
+                            </p>
+                            <img class="w-10 h-10 m-0 p-2" src="../assets/images/github.svg" alt="github">
+                            <!-- </span> -->
                         </a>
                         <ul class="list-disc list-inside">
                             <li>
@@ -167,24 +169,22 @@
         <!-- Projects ends here -->
 
         <!-- Skills -->
-        <div>
+        <div class="mb-10">
             <div>
                 &lt;skills&gt;
             </div>
 
             <div>
-                <section class="flex">
-                    <img width="60" height="60" src="../assets/images/html.svg" alt="html-5"/>
-                    <img width="60" height="60" src="../assets/images/css.svg" alt="css"/>
-                    <img width="60" height="60" src="../assets/images/tailwind-css.svg" alt="Tailwind-css"/>
-                    <img width="60" height="60" src="../assets/images/js.svg" alt="js"/>
-                    <img width="60" height="60" src="../assets/images/python.svg" alt="python"/>
-                    <img width="60" height="60" src="../assets/images/my-sql.svg" alt="my-sql"/>
-                    <img width="60" height="60" src="../assets/images/microsoft-sql-server.svg" alt="microsoft-sql-server"/>
-                    <img width="60" height="60" src="../assets/images/excel.svg" alt="excel"/>
-                    <img width="60" height="60" src="../assets/images/power-bi.svg" alt="power-bi"/>
-                    
-                    
+                <section class="flex flex-wrap">
+                    <img src="../assets/images/html.svg" alt="html-5" class="md:w-14 md:h-14 w-8 h-8"/>
+                    <img src="../assets/images/css.svg" alt="css" class="md:w-14 md:h-14 w-8 h-8"/>
+                    <img src="../assets/images/tailwind-css.svg" alt="Tailwind-css" class="md:w-14 md:h-14 w-8 h-8"/>
+                    <img src="../assets/images/js.svg" alt="js" class="md:w-14 md:h-14 w-8 h-8"/>
+                    <img src="../assets/images/python.svg" alt="python" class="md:w-14 md:h-14 w-8 h-8"/>
+                    <img src="../assets/images/my-sql.svg" alt="my-sql" class="md:w-14 md:h-14 w-8 h-8"/>
+                    <img src="../assets/images/microsoft-sql-server.svg" alt="microsoft-sql-server" class="md:w-14 md:h-14 w-8 h-8"/>
+                    <img src="../assets/images/excel.svg" alt="excel" class="md:w-14 md:h-14 w-8 h-8"/>
+                    <img src="../assets/images/power-bi.svg" alt="power-bi" class="md:w-14 md:h-14 w-8 h-8"/>
                 </section>
                 <p>
                     <ul class="list-disc list-inside">
@@ -232,15 +232,41 @@
             &lt;/education&gt;
         </div>
 
-    </div>
     <!-- Education Ends -->
     </main>
 
-    <!-- <footer class="flex backdrop-blur-sm bg-white/40 rounded-t-lg w-full justify-center">
-        <p>
-            All rights reserved.
-        </p>
-    </footer> -->
+    <footer class="flex gap-x-40">
+        <address class="flex flex-col md:hidden">
+            <p class="text-2xl">
+                &lt;Check my Work/&gt;
+            </p>
+            <section class="flex justify-around">
+                <a rel="noopener noreferrer" href="https://github.com/Praanshu98">
+                    <img src="../assets/images/github.svg" alt="github">
+                </a>
+                <a rel="noopener noreferrer" href="https://www.kaggle.com/praanshugrover">
+                    <img src="../assets/images/kaggle.png" alt="kaggle">
+                </a>
+            </section>
+        </address>
+
+        <address class="flex flex-col md:hidden">
+            <p class="text-2xl">
+                &lt;Connect with Me/&gt;
+            </p>
+            <section class="flex justify-around">
+                <a rel="noopener noreferrer" href="mailto:praanshugrover60@gmail.com">
+                    <img src="../assets/images/gmail.svg" alt="gmail">
+                </a>
+                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/mr-grover/">
+                    <img src="../assets/images/linkedin.svg" alt="linkedin">
+                </a>
+                <a rel="noopener noreferrer" href="https://twitter.com/Praanshu_Grover">
+                    <img class="h-14 w-14" src="../assets/images/twitterx.svg" alt="twitter-x">
+                </a>
+            </section>
+        </address>
+    </footer>
 
 </body>
 </html>
